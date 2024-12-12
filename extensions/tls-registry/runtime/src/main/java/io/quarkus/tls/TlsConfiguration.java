@@ -23,7 +23,7 @@ public interface TlsConfiguration {
             }
             return maybeConfiguration;
         }
-        return Optional.empty();
+        return registry.get("<default>");
     }
 
     /**
